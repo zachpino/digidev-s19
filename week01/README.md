@@ -153,7 +153,7 @@ Browse both [sparkfun](www.sparkfun.com) and [adafruit](www.adafruit.com), fine 
 
 #### Project Research
 
-Given the small and dedicated class, seems like the topic should be arrived at democratically. Read through some of these options, and bring a Post-It note that ranks the following...
+Given the small and dedicated class, perhaps the overarching course theme could be arrived at democratically. Read through some of these options, and bring a Post-It note that ranks the following...
 
 a. Read through this [government grant from the Help America Vote Act](https://www.grants.gov/web/grants/search-grants.html?keywords=hava) that strives to improve America's *incredibly outdated and vulnerable* voting infrastructure for individuals with visual and physical impairments. The language is confusing and vague, so listen to [this short podcast](https://art19.com/shows/the-weeds/episodes/50ddf118-3914-4be9-aace-414c9c0e372b) as well to better understand the problem and opportunities at every level. 
 
@@ -163,4 +163,6 @@ c. Epidemic spread is a growing concern in an increasingly interconnected world.
 
 d. Large multiples of sensors and actuators offer huge promise for immersive experiences, and require a special kind of programming logic and optimization. Check out the works of [Random International](https://www.random-international.com) to determine if working in multiples might be interesting to you. 
 
-e. If you were to work on a personal project that involves coding/electronics, do you have anything ready to go? 
+e. Alexa, Siri, and Google Assistant are nascent technologies that demand design consideration and implementation. Many of these systems are open source and ripe for activation and development. For example, the [AVS Platform](https://github.com/alexa/avs-device-sdk/wiki) gives any designer a turn-key method to embed Alexa's intelligence and reponsiveness in any physical object with an embedded Raspberry Pi microcontroller. Perhaps we could focus on voice interfaces this semester?
+
+f. If you were to work on a personal project that involves coding/electronics, do you have anything ready to go? 
