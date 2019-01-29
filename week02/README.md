@@ -12,7 +12,7 @@ First, make sure you [download and install Fritzing](http://fritzing.org/downloa
 - [Components](#components): RGB LED, Photoresistor
 - [Circuits](#circuits): Analog Voltage and Color Mixer
 - [Code](#code): analogRead(), analogWrite(), map(), constrain()
-- [Homework](#homework) : 
+- [Homework](#homework) : Color Matching Game
 
 -----
 
@@ -58,7 +58,7 @@ Check your expectations, and review pullup and pulldown resistors.
 
 Use a set of digital and analog controls to manipulate an RGB LED!
 
-![color-controller](color-controller.png)
+![color-controller](color_controller.png)
 
 -----
 
@@ -72,7 +72,7 @@ Double check that "Tools" -> "Board" is set to "Arduino/Genuino Uno" and that "T
 
 ### Homework
 
-Let's add some experiential structure to the RGB color mixer, and create an educational tool. 
+Let's add some experiential structure to the RGB color mixer, and create an educational game. 
 
 Add a second RGB LED to you circuit, and let it display a reference [random](https://www.arduino.cc/reference/en/language/functions/random-numbers/random/) color. Let a potential user try to match the color by incrementing and decrementing the color of the first RGB LED with either 3 buttons or 3 photoresistors.
 
