@@ -3,3 +3,4 @@ Documentation and Resources for the Spring 2019 IIT Institute of Design Digital 
 
 - [Formal Syllabus](digital-development-s19.pdf)
 - [Week 01 · Course Introduction](week01/README.md) 	
+- [Week 02 · Analog & Digital Control](week02/README.md) 	
