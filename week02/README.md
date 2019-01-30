@@ -12,7 +12,7 @@ First, make sure you [download and install Fritzing](http://fritzing.org/downloa
 - [Components](#components): RGB LED, Photoresistor
 - [Circuits](#circuits): Analog Voltage and Color Mixer
 - [Code](#code): analogRead(), analogWrite(), map(), constrain()
-- [Homework](#homework) : Color Matching Game
+- [Homework](#homework) : RGB Color Controller
 
 -----
 
@@ -66,16 +66,51 @@ Use a set of digital and analog controls to manipulate an RGB LED!
 
 Double check that "Tools" -> "Board" is set to "Arduino/Genuino Uno" and that "Tools" -> "Port" is set to whichever "COM" USB port has a connected "Arduino Uno".
 
-*Come back after class, no cheating!*
+```c
+void setup() {
+  // put your setup code here, to run once:
+  //set RGB LED pins as output
+  pinMode(9, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  
+  //set Photoresistor pin to input
+  pinMode(A1, INPUT);
 
+  //begin USB communication
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  //store reading from Photoresistor in variable
+  int lightReading = analogRead(A1);
+  //convert values from calibrate domain to target range
+  //the 500 and 900 below should be derived experimentally
+  int mappedReading = map(lightReading, 500, 900, 0, 255);
+  
+  //make sure the values never float below 0 or above 255
+  int constrainedReading = constrain(mappedReading, 0, 255);
+
+  //print some feedback for visual debugging and calibration
+  Serial.print("original Reading: ");
+  Serial.print(lightReading);
+  Serial.print(" - ");
+  Serial.print("mapped Reading: ");
+  Serial.print(mappedReading);
+  Serial.print(" - ");
+  Serial.print("Constrained Reading: ");
+  Serial.println(constrainedReading);
+  //note the 'println' on the last line so that a new line is created
+
+  //use transformed values to drive LED colors.
+  //this code will start red, and become more blue as light intensity increases
+  analogWrite(11, constrainedReading);
+  analogWrite(9, 255 - constrainedReading);
+}
+```
 -----
 
 ### Homework
 
-Let's add some experiential structure to the RGB color mixer, and create an educational game. 
-
-Add a second RGB LED to you circuit, and let it display a reference [random](https://www.arduino.cc/reference/en/language/functions/random-numbers/random/) color. Let a potential user try to match the color by incrementing and decrementing the color of the first RGB LED with either 3 buttons or 3 photoresistors.
-
-If the user presses *another* button, a new random color should show up on the reference LED for the user to try to match.
-
-Bonus Points: This is hard, but give it a try! Could the Arduino check if the user has correctly matched the two LEDs, and automatically generate a new color if the user has succeeded? [Compound conditions](https://forum.arduino.cc/index.php?topic=207443.0) will be required to pull this off. 
+Add two more photoresistors to your circuit from class to drive each color channel (red, green, and blue) independently. Play with arithmetic, `map()` and `constrain` so that the colors behave in interesting ways as brightness changes. Ensure that your code is well-calibrated to the lighting conditions of the studio.
