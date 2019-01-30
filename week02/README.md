@@ -113,4 +113,4 @@ void loop() {
 
 ### Homework
 
-Add two more photoresistors to your circuit from class to drive each color channel (red, green, and blue) independently. Play with arithmetic, `map()` and `constrain` so that the colors behave in interesting ways as brightness changes. Ensure that your code is well-calibrated to the lighting conditions of the studio.
+Add two more photoresistors to your circuit from class to drive each color channel (red, green, and blue) independently. Play with arithmetic, `map()` and `constrain()` so that the colors behave in interesting ways as brightness changes. Ensure that your code is well-calibrated to the lighting conditions of the studio.
