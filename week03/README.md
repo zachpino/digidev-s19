@@ -76,7 +76,29 @@ Let's control that noise?
 
 Double check that "Tools" -> "Board" is set to "Arduino/Genuino Uno" and that "Tools" -> "Port" is set to whichever "COM" USB port has a connected "Arduino Uno".
 
-Come back after class! 
+```c
+int potPin = A0;
+int buzzerPin = 6;
+
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(potPin, INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  int potValue = analogRead(potPin);
+
+  int mappedValue = map(potValue, 0, 1023, 110, 1568);
+  
+  tone(buzzerPin, mappedValue);
+
+}
+```
 
 -----
 
