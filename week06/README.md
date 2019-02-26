@@ -112,8 +112,6 @@ If we have time, let's also learn how to drive a set of motors, rather than just
 
 Double check that "Tools" -> "Board" is set to "Arduino/Genuino Uno" and that "Tools" -> "Port" is set to whichever "COM" USB port has a connected "Arduino Uno".
 
-Download and install the [Low-Power Library](https://learn.sparkfun.com/tutorials/reducing-arduino-power-consumption) to put the Arduino into hibernation.
-
 #### Distance Sensor
 
 ```c
