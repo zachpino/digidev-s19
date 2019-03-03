@@ -188,7 +188,7 @@ void loop() {
 
 ### Homework
 
-Prepare to discusss a project or two that you would like to work on this semester! It might be worth revisiting the ideas from [week 1](../week01/README.md#homework) if you are feelign stuck.
+Prepare to discusss a project or two that you would like to work on this semester! It might be worth revisiting the ideas from [week 1](../week01/README.md#homework) if you are feeling stuck.
 
 Please bring the circuit pictured above fully-wired up and be prepared to discuss the code above.
 
