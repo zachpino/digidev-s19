@@ -102,10 +102,6 @@ Here, let's combine a bunch of sensors into a single weather station object.
 
 ![weather station](weatherstation.png)
 
-If we have time, let's also learn how to drive a set of motors, rather than just read from them.
-
-![motors](motors.png)
-
 -----
 
 ### Code
@@ -188,36 +184,13 @@ void loop() {
 }
 ```
 
-Also, if time permits...
-
-
-```c
-int motorPin = 3;
- 
-void setup() 
-{ 
-  pinMode(motorPin, OUTPUT);
-  Serial.begin(9600);
-} 
- 
- 
-void loop() 
-{ 
-  if (Serial.available())
-  {
-    int motorSpeed = Serial.parseInt();
-    if (motorSpeed >= 0 && motorSpeed <= 255)
-    {
-      analogWrite(motorPin, motorSpeed);
-    }
-  }
-} 
-
-```
-
 -----
 
 ### Homework
 
-Prepare a short presentation for the project you would like to work on this semester! More details to come after class.
+Prepare to discusss a project or two that you would like to work on this semester! It might be worth revisiting the ideas from [week 1](../week01/README.md) if you are feelign stuck.
+
+Please bring the circuit pictured above fully-wired up and be prepared to discuss the code above.
+
+
 
