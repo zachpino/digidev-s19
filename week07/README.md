@@ -1,6 +1,6 @@
-# Week 06 · Managing and Collecting Data 
+# Week 07 · Moving Forward 
 
-Let's put everything we've learned into a deployable package, and talk about how to plan for and create data collection instruments.
+Let's get things moving today, and learn about power isolation.
 
 - [Components](#components): Motors, Transistors, Diodes, Servos
 - [Circuits](#circuits): Motor Control with Distributed Power
