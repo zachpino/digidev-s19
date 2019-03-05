@@ -8,4 +8,4 @@ Documentation and Resources for the Spring 2019 IIT Institute of Design Digital 
 - [Week 04 · Looping Beats Revisited](week03/README.md) 	
 - [Week 05 · Sensor Diversity and Soldering](week05/README.md) 	
 - [Week 06 · Managing and Collecting Data ](week06/README.md) 	
-- [Week 07 · Managing and Collecting Data ](week07/README.md) 	
+- [Week 07 · Moving Forward ](week07/README.md) 	
