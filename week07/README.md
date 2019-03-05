@@ -93,7 +93,7 @@ void loop()
   if (Serial.available())
   {
     int motorSpeed = Serial.parseInt();
-    if (motorSpeed >= 0 && motorSpeed <= 255)
+    if ((motorSpeed >= 0) && (motorSpeed <= 255))
     {
       analogWrite(motorPin, motorSpeed);
     }
