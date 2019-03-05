@@ -115,3 +115,4 @@ Please prepare a short presentation (10 slides), and include the following:
 - Set of technologies you'd like to explore
 - Some sketches of possible outcomes
 - List of functionalities you'd like to support in hardware and in software
+- Comparable / Inspirational projects
